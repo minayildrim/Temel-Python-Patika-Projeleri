@@ -1,0 +1,24 @@
+2- Verilen listenin içindeki elemanları tersine döndüren bir fonksiyon yazın. Eğer listenin içindeki elemanlar da liste içeriyorsa onların elemanlarını da tersine döndürün. Örnek olarak:
+input: [[1, 2], [3, 4], [5, 6, 7]]
+output: [[[7, 6, 5], [4, 3], [2, 1]]
+
+KOD INPUT
+list2 =[[1, 2], [3, 4], [5, 6, 7]]
+reversed_list = []
+# loop from 0 to len -1 i.e. size of list
+for i in range(len(list2)):
+    
+    reversed_list.append(list2[-(i+1)])
+print('Reversed list: ')
+print(reversed_list)
+
+reversed_list2 = [elem[::-1] for elem in reversed_list]
+print('Reversed List of List')
+print(reversed_list2)
+
+
+KOD OUTPUT
+Reversed list: 
+[[5, 6, 7], [3, 4], [1, 2]]
+Reversed List of List
+[[7, 6, 5], [4, 3], [2, 1]]
